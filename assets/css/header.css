@@ -1,0 +1,81 @@
+
+header{
+    width: 300px;
+    height: 100vh;
+    background-color: #111;
+    padding: 30px;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 10px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    object-fit: cover;
+    padding: 3px;
+}
+.title-user{
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+header nav ul{
+    list-style: none;
+}
+header nav li{
+    display: block;       
+    padding:14px 0;
+}
+header nav li:nth-child(4){  
+   display: flex;   
+   align-items: center;
+   position: relative;
+   
+}
+header nav li:nth-child(4) span{
+    position: absolute; 
+    top: -3px;
+    right: 120px;
+    width: 23px;
+    height: 23px;    
+    border-radius: 50%;
+    background-color: #cb0f0f; 
+    color: #eee;   
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav li a{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #4d4a4a;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    transition: all .8s ease-in-out;
+    
+}
+header nav li a i{
+    margin-right: 10px;
+    
+}
+header nav li a:hover{
+    color: yellow;
+}
