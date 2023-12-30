@@ -70,3 +70,14 @@ input[type="time"] {
     color: #eae3e3;
     font-weight: 600;
 }
+@media (max-width:425px) {
+    .form-times{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+    }
+    
+    
+}

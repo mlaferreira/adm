@@ -159,3 +159,40 @@
     
 }
 
+@media (max-width:768px){
+    .info-escala{
+        width: 100%;
+       
+    }
+}
+
+@media (max-width:425px){
+    .info-escala{
+        width: 100%;
+        height: auto;
+        gap: 20px;
+       
+    }
+    .info-desc{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .local-mes{
+        display: flex;
+        gap: 10px;
+    }
+    .box-dias{
+        width: 100%;
+        justify-content: center;
+    }
+    .valor-total{
+        height: auto;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    .valor-total p span{
+        font-size: 18px;
+    }
+}
