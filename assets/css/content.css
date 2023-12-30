@@ -40,3 +40,18 @@ main{
     margin-bottom: 40px;
     border-radius: 10px;
 }
+
+@media (max-width:768px) {
+    main{
+        width: 100%;       
+        
+    }
+    .content-main{
+        flex-direction: column;
+        gap: 0;
+    }
+    .informaçoes{
+        margin-bottom: 20px;
+    }
+    
+}

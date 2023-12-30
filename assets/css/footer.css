@@ -12,7 +12,6 @@ footer{
 .footer-content{
     font-size: 16px;
 }
-.footer-social,
 .social-icons{
     font-size: 12px;
 }
@@ -24,4 +23,24 @@ footer{
 .social-icons a{
     color: #eee;
     font-size: 22px;
+}
+
+@media (max-width:768px) {
+   footer{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;   
+    align-items: center;
+   
+   }
+   .footer-content{
+    font-size: 12px;
+   }
+   .social-icons{
+    gap: 8px;
+   }
+   .social-icons a{
+    font-size: 16px;
+   }
+    
 }

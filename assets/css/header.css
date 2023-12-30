@@ -79,3 +79,93 @@ header nav li a i{
 header nav li a:hover{
     color: yellow;
 }
+header .mobile{
+    display: none;
+}
+@media (max-width:768px) {
+    header{
+        width: 100%;
+        height: 120px;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-content: center;
+        align-items: center;     
+    }
+    header .logo{
+        flex: 1;
+        margin-bottom: 0;
+    }
+    header nav ul{    
+        flex: 1; 
+        display: flex;       
+        flex-direction: row;
+    }
+    header nav li{
+        margin-left: 10px;
+        
+    }
+    header nav li a{
+        font-size: 12px;
+        border-bottom: none;
+    }
+    header nav li:nth-child(4){
+        display: none;
+    }
+    
+    
+    
+}
+
+@media (max-width:425px){
+    header{
+        width: 100%;
+        height: 120px;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-content: center;
+        align-items: center;     
+    }
+    header .logo{
+        flex: 1;
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    header nav ul{    
+        flex: 1; 
+        display: none;       
+        flex-direction: row;
+    }
+    header nav li{
+        margin-left: 10px;
+        
+    }
+    header nav li a{
+        font-size: 12px;
+        border-bottom: none;
+    }
+    header nav li:nth-child(4){
+        display: none;
+    }
+    header .mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 32px;
+        height: 32px;
+        gap: 8px;
+    }
+    header .mobile:hover{
+        cursor: pointer;
+       
+    }
+    header .mobile .bar{
+        width: 100%;
+        height: 3px;
+        background-color: #eee;       
+    }
+   
+    
+}
