@@ -75,9 +75,7 @@ input[type="time"] {
         flex-direction: column;
         height: auto;
         padding: 10px;
-        margin-bottom: 20px;
-        
-    }
-    
+        margin-bottom: 20px;        
+    }    
     
 }

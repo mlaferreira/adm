@@ -78,4 +78,9 @@ main{
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
+    .formularios .descrition{
+        font-size: 10px;
+        line-height: 14px;
+        
+    }
 }
