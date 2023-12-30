@@ -1,7 +1,7 @@
 
 header{
     width: 300px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #111;
     padding: 30px;
     color: #eee;

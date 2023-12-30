@@ -1,6 +1,6 @@
 main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     flex: 1;
     background-color: #222;
     padding: 30px;    
@@ -31,14 +31,29 @@ main{
     padding: 30px;
     margin-bottom: 40px;
     border-radius: 10px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .formularios{
-    width: 100%;
+    width: 100%;    
     flex: 1;
     background-color: #333;
     padding: 30px;
     margin-bottom: 40px;
     border-radius: 10px;
+    text-align: center;
+}
+.formularios .descrition{
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+.formularios .descrition strong{
+    color: rgb(171, 171, 9);
 }
 
 @media (max-width:768px) {
