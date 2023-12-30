@@ -127,7 +127,7 @@
     height: 50px;
     top: 100px;
     left: -100px;
-    background-color: rgb(7, 212, 31);
+    background-color: rgb(132, 5, 47);
     z-index: 10;
     opacity: .9;
     transform: rotate(-45deg);
@@ -150,7 +150,7 @@
     transform: rotate(-45deg);
     font-size: 30px;
     text-transform: uppercase;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;    
     
