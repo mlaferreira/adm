@@ -1,0 +1,74 @@
+.banner{
+    width: 100%;
+    min-height: 40vh;
+    flex: 1;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+}
+.banner{
+    background-image: url('../imgs/bg-banner.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;    
+}
+
+
+.banner h1{
+    width: 500px;
+    background-color: #111;
+    font-size:30px;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    text-transform: uppercase;
+   
+}
+.banner p{
+    width: 500px;
+    background-color: brown;
+    color: #eee;
+    padding: 10px;
+  
+}
+@media (max-width: 768px) {
+    .banner{
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+    }
+    .banner h1{
+        text-align: left;
+        font-size: 40px;
+    }
+    .banner h1, .banner p{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+
+    }
+    
+}
+@media (max-width: 425px){
+    .banner{
+        min-height: 10vh;
+    }
+    .banner h1{
+        text-align: inherit;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .banner h1, .banner p{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+
+    }
+}

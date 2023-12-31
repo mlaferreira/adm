@@ -10,14 +10,7 @@ main{
     gap: 20px;
 }
 
-.banner{
-    width: 100%;
-    min-height: 40vh;
-    flex: 1;
-    background-color: #333;
-    border-radius: 10px;
-    padding: 30px;
-}
+
 .content-main{
     display: flex;
     min-height: 60vh;
