@@ -64,8 +64,10 @@ main{
         margin-bottom: 20px;
     }
     .informaçoes h2{
+        display: block;
         width: 100%;
         flex: 1;
+        margin-bottom: 20px;
     }
     
 }
@@ -76,8 +78,10 @@ main{
         margin-bottom: 20px;
     }
     .informaçoes h2{
+        display: block;
         width: 100%;
         flex: 1;
+        margin-bottom: 20px;
     }
     .formularios .descrition{
         font-size: 10px;
