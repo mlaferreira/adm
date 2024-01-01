@@ -30,6 +30,17 @@ main{
     flex-wrap: wrap;
     align-content: flex-start;
 }
+.section-title h2{
+    display: block;
+    width: 100%;
+    flex: 1;
+    margin-bottom: 20px;
+}
+.info-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
 .formularios{
     width: 100%;    
     flex: 1;
@@ -78,6 +89,7 @@ main{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
+        padding: 5px;
     }
     .section-title h2{
         display: block;
