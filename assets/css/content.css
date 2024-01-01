@@ -63,6 +63,10 @@ main{
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 20px;
     }
+    .informaçoes h2{
+        width: 100%;
+        flex: 1;
+    }
     
 }
 @media (max-width:425px){
@@ -71,6 +75,7 @@ main{
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
+    .
     .formularios .descrition{
         font-size: 10px;
         line-height: 14px;
