@@ -37,9 +37,11 @@ main{
     margin-bottom: 20px;
 }
 .info-content{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 20px;
+   
 }
 .formularios{
     width: 100%;    
@@ -75,6 +77,7 @@ main{
         width: 100%;
         flex: 1;
         margin-bottom: 20px;
+        text-align: center;
     }
     .info-content{
         display: grid;
@@ -96,6 +99,7 @@ main{
         width: 100%;
         flex: 1;
         margin-bottom: 20px;
+        text-align: center;
     }
     .formularios .descrition{
         font-size: 10px;

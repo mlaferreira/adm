@@ -1,6 +1,7 @@
+
 .info-escala{    
-    width: 48%;
-    max-width: 375px;
+    width: 95%;
+    max-width: 375px;  
     min-height: 300px;   
     background-color: #555;
     padding: 10px;
@@ -11,7 +12,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    gap: 20px;   
+    margin-bottom: 20px;   
 }
 .info-escala h3{
     width: 100%;
@@ -85,11 +86,12 @@
 .valor-total{
     padding: 10px;
     width: 100%;
-    height: 30px;
+    height: 35px;
     background-color: #252424;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 15px 0;
 }
 .valor-total p:nth-child(1){
     font-size: 10px;
