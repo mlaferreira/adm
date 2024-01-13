@@ -1,30 +1,32 @@
 
 header{
-    width: 300px;
+    width: 30rem;
     min-height: 100vh;
     background-color: #111;
-    padding: 30px;
+    padding: 3rem;
     color: #eee;
     display: flex;
     flex-direction: column;
+    padding: 0 3rem;
 }
 header .logo{
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
-    gap: 10px;
+    margin-bottom: 3.2rem;
+    gap: 1rem;
 }
 .logo img{
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: #333;
     object-fit: cover;
-    padding: 3px;
+    padding: 0.3rem;
 }
 .title-user{
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 2rem;
 
 }
 header nav{
@@ -37,7 +39,7 @@ header nav ul{
 }
 header nav li{
     display: block;       
-    padding:14px 0;
+    padding:1.4rem 0;
 }
 header nav li:nth-child(4){  
    display: flex;   
@@ -47,14 +49,14 @@ header nav li:nth-child(4){
 }
 header nav li:nth-child(4) span{
     position: absolute; 
-    top: -3px;
-    right: 120px;
-    width: 23px;
-    height: 23px;    
+    top: -0.3rem;
+    right: 12rem;
+    width: 2.3rem;
+    height: 2.3rem;    
     border-radius: 50%;
     background-color: #cb0f0f; 
     color: #eee;   
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -68,12 +70,14 @@ header nav li a{
     text-decoration: none;
     border-bottom: 1px solid #4d4a4a;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
     transition: all .8s ease-in-out;
+    font-size: 1.6rem;
     
 }
 header nav li a i{
-    margin-right: 10px;
+    margin-right: 1rem;
+    font-size: 1.6rem;
     
 }
 header nav li a:hover{
@@ -85,11 +89,13 @@ header .mobile{
 @media (max-width:768px) {
     header{
         width: 100%;
-        min-height: 120px;
+        min-height:12rem;
         flex-direction: row;
         justify-content: space-between; 
         align-content: center;
-        align-items: center;            
+        align-items: center; 
+        padding:0 3rem;  
+                
     }
     header .logo{
         flex: 1;
@@ -101,11 +107,11 @@ header .mobile{
         flex-direction: row;
     }
     header nav li{
-        margin-left: 10px;
+        margin-left: 1rem;
         
     }
     header nav li a{
-        font-size: 12px;
+        font-size: 1.2rem;
         border-bottom: none;
     }
     header nav li:nth-child(4){
@@ -119,11 +125,12 @@ header .mobile{
 @media (max-width:425px){
     header{
         width: 100%;
-        height: 120px;
+        height: 12rem;
         flex-direction: row;
         justify-content: space-between; 
         align-content: center;
-        align-items: center;     
+        align-items: center;
+        padding: 0 3rem;     
     }
     header .logo{
         flex: 1;
@@ -138,11 +145,11 @@ header .mobile{
         flex-direction: row;
     }
     header nav li{
-        margin-left: 10px;
+        margin-left: 1rem;
         
     }
     header nav li a{
-        font-size: 12px;
+        font-size: 1.2rem;
         border-bottom: none;
     }
     header nav li:nth-child(4){
@@ -153,9 +160,9 @@ header .mobile{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 32px;
-        height: 32px;
-        gap: 8px;
+        width: 3.2rem;
+        height: 3.2rem;
+        gap: 0.8rem;
     }
     header .mobile:hover{
         cursor: pointer;
@@ -163,7 +170,7 @@ header .mobile{
     }
     header .mobile .bar{
         width: 100%;
-        height: 3px;
+        height: 0.3rem;
         background-color: #eee;       
     }
    

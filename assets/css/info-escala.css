@@ -1,25 +1,28 @@
 
 .info-escala{    
     width: 95%;
-    max-width: 375px;  
-    min-height: 300px;   
+    max-width: 37.5rem;  
+    min-height: 30rem;   
     background-color: #555;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
-    gap: 20px;  
+    margin-bottom: 2rem;
+    gap: 2rem;  
+}
+.section-title{
+    font-size: 5rem;
 }
 .info-escala h3{
     width: 100%;
     margin: 0;
-    padding: 10px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1.6rem;
     background-color: #252424;
     text-align: center;
     font-weight: 600;
@@ -34,21 +37,23 @@
 .info-desc h4{
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 2rem;
     color: yellow;
     flex: 1;    
 }
 .info-desc .horario{
-    flex: 1;
-    font-size: 12px;
+    flex: 1;    
     display: flex;
-    gap: 10px;
-
+    gap: 1rem;
+}
+.info-desc .horario p{
+    font-size: 1.6rem;
 }
 .info-desc .local-mes{
-    flex: 1;
-    font-size: 12px;
-
+    flex: 1;    
+}
+.info-desc .local-mes p{
+    font-size: 1.6rem;
 }
 .info-desc .local-mes p:nth-child(2){
     color: yellow;
@@ -56,8 +61,12 @@
 .qtd-dias{
     width: 100%;
     background-color: #444;
-    padding: 10px 0;
-    font-size: 18px;    
+    padding: 1rem 0;
+     
+}
+.qtd-dias p{
+    font-size: 1.8rem;   
+
 }
 .qtd-dias strong{
     font-weight: 600;
@@ -66,28 +75,28 @@
     width: 100%;
     flex-wrap: wrap;
     display: flex;
-    gap: 5px;
+    gap: 0.5rem;
     border: 1px solid #444;
-    padding: 10px;
-    margin-top: -20px;
+    padding: 1rem;
+    margin-top: -2rem;
     border-top: 0;
 }
 .box-dias p{   
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     background-color: #252424;
     color: #eee;
-    font-size: 12px;
+    font-size: 1.2rem;
 
 }
 .valor-total{
-    padding: 10px;
+    padding: 1rem;
     width: 100%;
-    height: 35px;
+    height: 3.5rem;
     background-color: #252424;
     display: flex;
     align-items: center;
@@ -95,20 +104,20 @@
    
 }
 .valor-total p:nth-child(1){
-    font-size: 10px;
+    font-size: 1rem;
 }
 .valor-total sup{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 .valor-total p span{
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .btn-card{  
     display: inline-flex;
     text-decoration: none;
     width: 100%;   
-    padding: 8px 0;
+    padding: 0.8rem 0;
     background-color: #a5a9a5;
     justify-content: center;
     align-items: center;
@@ -116,6 +125,7 @@
     font-weight: 600;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
+    font-size: 1.8rem;
     
 }
 .btn-card:hover{
@@ -123,56 +133,34 @@
     color: #eee;
 }
 
+.info-escala .no-paga,
+.info-escala .paga,
+.info-escala .servico-tirado
+{
+    position: absolute;
+    width: 40rem;
+    height: 5rem;
+    top: 10rem;
+    left: -10rem;    
+    z-index: 10;
+    opacity: .9;
+    transform: rotate(-45deg);
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+}
 .info-escala .no-paga{
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    top: 100px;
-    left: -100px;
     background-color: rgb(132, 5, 47);
-    z-index: 10;
-    opacity: .9;
-    transform: rotate(-45deg);
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+}
+.info-escala .paga{   
+    background-color: rgb(7, 212, 31);      
     
 }
-.info-escala .paga{
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    top: 100px;
-    left: -100px;
-    background-color: rgb(7, 212, 31);
-    z-index: 10;
-    opacity: .9;
-    transform: rotate(-45deg);
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    
-}
-.info-escala .servico-tirado{
-    position: absolute;
-    width: 400px;
-    height: 50px;
-    top: 100px;
-    left: -100px;
-    background-color: rgb(4, 120, 165);
-    z-index: 10;
-    opacity: .9;
-    transform: rotate(-45deg);
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    
+.info-escala .servico-tirado{   
+    background-color: rgb(4, 120, 165); 
 }
 
 @media (max-width:768px){
@@ -186,17 +174,17 @@
     .info-escala{
         width: 100%;
         height: auto;
-        gap: 20px;
-        padding: 3px;
+        gap: 2rem;
+        padding: 0.3rem;
        
     }
     .info-desc{
         flex-direction: column;
-        gap: 10px;
+        gap: 1rem;
     }
     .local-mes{
         display: flex;
-        gap: 10px;
+        gap: 1rem;
     }
     .box-dias{
         width: 100%;
@@ -205,11 +193,11 @@
     .valor-total{
         height: auto;
       flex-direction: column;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      gap: 10px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      gap: 1rem;
     }
     .valor-total p span{
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
