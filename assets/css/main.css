@@ -20,9 +20,12 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
+    
+}
+body, input, button{
     font-family: 'Sora', sans-serif;
     font-size: 1.6rem;
-    
 }
 
 .container{
