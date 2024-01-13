@@ -23,7 +23,7 @@ body{
     
     
 }
-body, input, button{
+body, input, button,select{
     font-family: 'Sora', sans-serif;
     font-size: 1.6rem;
 }
