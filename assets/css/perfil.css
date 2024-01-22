@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;    
+    background-color: #111;
+}
+body, input, button,select{
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
+}
+.page_perfil{
+    width: 100%;
+    min-height: 100vh;   
+    max-width: 144rem;    
+    margin:3rem auto;
+    border: .2rem solid #333;
+    border-radius: .9rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;    
+}
+.page_perfil a{
+    margin-left: -3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    padding: .6rem;
+    text-decoration: none;
+    color: #999;
+    text-transform:capitalize;
+    background-color: #333;
+    border-radius: 0 .5rem .5rem 0;
+    transition: all .3s;    
+}
+.page_perfil a:hover{
+    background-color: #42a5f5;
+    color: #fff;
+}
+.perfil_header{
+    width: 100%;
+    height: 20rem;    
+    z-index: 1;
+    text-align: right;
+    color: #413f3f;    
+
+}
+.perfil_header p{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.perfil_header .dindin{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #42a5f5;    
+}
+.perfil_header .dindin i{
+    color: #fff;    
+}
+.page_perfil h1{
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+}
+.page_perfil h1 i{
+    margin-right: .3rem;
+}
+.perfil_main{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    z-index: 2;
+}
+
+.perfil_main-avatar{
+    width: 35rem;
+    height: 35rem;
+    background-color: #202024;
+    border-radius: 1rem;
+    margin-top: -10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+.perfil_main-avatar,
+.perfil_main-bio,
+.perfil_main-metas
+{
+    position: relative;
+}
+.pencil{
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;    
+    top: 1.6rem;
+    right: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+.pencil i{
+    font-size: 2rem;
+    color: #555;
+    transition: all .3s;
+}
+.pencil:hover {
+    background-color: #302f2f;
+    
+}
+.pencil:hover i {
+    
+    color: #fff;
+}
+.perfil_main-avatar .avatar-box{
+    width: 13rem;
+    height: 13rem;    
+    border-radius: 50%;
+    background-color: #777;    
+    align-self: center;
+    margin-bottom: 1.6rem;
+}
+.perfil_main-avatar .avatar-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil_main-avatar .avatar-box,
+.perfil_main-avatar .name,
+.perfil_main-avatar .create-conta
+{
+    align-self: center;
+}
+.perfil_main-avatar .name h2{
+    color: #eee;
+    font-size: 1.9rem;
+    word-wrap: break-word;    
+    text-align: center;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+.perfil_main-avatar .create-conta{
+    border-top: .156rem solid #111;
+    padding: 1rem;
+}
+.perfil_main-avatar .create-conta p{
+    color: #555;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+.perfil_bloco{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 3.2rem;
+}
+.perfil_main-bio,
+.perfil_main-metas{
+    width: 100%;
+    min-height: 5vh;
+    background-color: #202024;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+.perfil_main-bio h3,
+.perfil_main-metas h3
+{
+    color: #eee;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+}
+.perfil_main-bio p{
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3.2rem;
+}
+.col-3-card-meta,
+.col-3-card-escala{
+    border: .1rem solid #333;
+    width: 30rem;   
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: .5rem;
+}
+.col-3-card-meta:hover,
+.col-3-card-escala:hover{
+    border: #fff solid .1rem;
+}
+.col-3-card-meta{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.meta-icon{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meta-icon i{
+    color: #fde635;;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.meta-money{
+    flex: 1;
+    text-align: right;
+}
+.meta-money h2{    
+    color: #b8b6b6;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.meta-money p{   
+    display: block;
+    font-size: 2rem;
+    color: #fde635;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.meta-money .money-cach{
+    font-size: 1.2rem;
+    color: #42a5f5;
+}
+.col-3-card-escala .card-title h2{
+    font-size: 2rem;
+    color: #a1a0a0;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin-bottom: .5rem;
+}
+.col-3-card-escala .card-title i{
+    color: #fff;
+    margin-right: .5rem;
+    font-size: 2rem;
+}
+.col-3-card-escala .card-title p{
+    text-align:left;
+    font-size: 1.4rem;
+    color: #eee;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.col-3-card-escala .card-info{
+    border-top: #575656 solid .1rem;   
+   
+}
+.col-3-card-escala .card-info p{
+    margin: 1.6rem 0;    
+    color: #eee;
+    text-transform: uppercase;
+}
+.col-3-card-escala .card-info span{
+    display: inline-flex;
+    width: 3.2rem;
+    height: 3.3rem;
+    padding: 1rem;
+    background-color: #555;
+    color: #eee;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: .3rem;    
+}
+.money-valor{
+    text-align: center;
+    margin-top: 2rem;
+    background-color:#333;
+    padding: 1rem;
+    border-radius: 999rem;
+}
+.money-valor p{    
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}

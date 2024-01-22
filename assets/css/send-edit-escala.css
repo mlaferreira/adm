@@ -1,0 +1,26 @@
+.send-edit-escala{
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+    width: 100%;
+    height: 60rem;    
+    position: relative;
+    margin: 5rem 0;
+}
+.send-edit-escala img{
+    width: 40rem;
+    height: 40rem;
+    max-width: 100%;
+    object-fit: cover;    
+    
+}
+
+.send-edit-escala h2{
+    margin: 5rem 0;
+}
+.send-content{
+    display: flex;
+    gap: 20rem;
+}
+form{
+    flex: 1;
+}
